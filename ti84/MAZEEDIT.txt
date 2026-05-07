@@ -1,0 +1,242 @@
+ClrHome
+Lbl S
+0→M
+2→G
+2→H
+ClrHome
+1→Z
+ClrHome
+Lbl M
+Listmatr({1,1,1,1,1,1,1,1,1},{1,0,2,0,0,0,0,0,1},{1,0,0,0,0,0,0,0,1},{1,0,0,0,0,0,0,0,1},{1,0,0,0,0,0,0,0,1},{1,0,0,0,0,0,0,0,1},{1,0,0,0,0,0,0,0,1},{1,0,0,0,0,0,0,0,1},{1,1,1,1,1,1,1,1,1},[A]
+Lbl G
+0→W
+If [A](G,H)=2
+1→W
+[A](G-1,H)→D
+If D=0 or D=2
+Then
+1→A
+Goto 5
+Else
+0→A
+Goto 5
+Lbl 5
+[A](G+1,H)→D
+If D=0 or D=2
+Then
+1→B
+Goto 6
+Else
+0→B
+Goto 6
+Lbl 6
+[A](G,H-1)→D
+If D=0 or D=2
+Then
+1→E
+Goto 7
+Else
+0→E
+Goto 7
+Lbl 7
+[A](G,H+1)→D
+If D=0 or D=2
+Then
+1→F
+Goto 8
+Else
+0→F
+Goto 8
+Lbl 8
+ClrHome
+ClrDraw
+If A=1
+Then
+Line(102,112,102,264,BLACK
+Line(162,112,162,264,BLACK
+Else
+If A=0
+Line(102,112,162,112,BLACK
+End
+If B=1
+Then
+Line(102,52,102,0,BLACK
+Line(162,52,162,0,BLACK
+Else
+If B=0
+Line(102,52,162,52,BLACK
+End
+If E=1
+Then
+Line(102,112,0,112,BLACK
+Line(102,52,0,52,BLACK
+Else
+If E=0
+Line(102,112,102,52,BLACK
+End
+If F=1
+Then
+Line(162,112,264,112,BLACK
+Line(162,52,264,52,BLACK
+Else
+If F=0
+Line(162,112,162,52,BLACK
+End
+If W=1
+Text(82,132,"W
+Lbl L
+getKey→K
+If K=25
+Then
+Goto A
+Else
+If K=34
+Then
+Goto B
+Else
+If K=24
+Then
+Goto C
+Else
+If K=26
+Then
+Goto E
+Else
+If K=22
+Then
+1→T
+Goto Z
+Else
+If K=42
+Then
+2→T
+Goto Z
+Else
+If K=31
+Then
+3→T
+Goto Z
+Else
+If K=33
+Then
+4→T
+Goto Z
+Else
+If K=105
+Then
+Goto Q
+Else
+Goto L
+Lbl A
+ClrHome
+[A](G-1,H)→D
+If D≠1
+Then
+G-1→G
+Goto G
+Else
+If D=1
+Then
+Goto G
+
+Lbl B
+ClrHome
+[A](G+1,H)→D
+If D≠1
+Then
+G+1→G
+Goto G
+Else
+If D=1
+Then
+Goto G
+
+Lbl C
+ClrHome
+[A](G,H-1)→D
+If D≠1
+Then
+H-1→H
+Goto G
+Else
+If D=1
+Then
+Goto G
+
+Lbl E
+ClrHome
+[A](G,H+1)→D
+If D≠1
+Then
+H+1→H
+Goto G
+Else
+If D=1
+Then
+Goto G
+
+Lbl Z
+Menu("TYPE OF TILE","WALL",V,"SPACE",W,"EXIT",X
+Lbl V
+3→U
+Goto Y
+Lbl W
+0→U
+Goto Y
+Lbl X
+2→U
+Goto Y
+Lbl Y
+If T=1 and [A](G-1,H)≠1
+Then
+U→[A](G-1,H)
+Goto G
+Else
+If T=2 and [A](G+1,H)≠1
+Then
+U→[A](G+1,H)
+Goto G
+Else
+If T=3 and [A](G,H-1)≠1
+Then
+U→[A](G,H-1)
+Goto G
+Else
+If T=4 and [A](G,H+1)≠1
+Then
+U→[A](G,H+1)
+Goto G
+Else
+Goto G
+
+Lbl Q
+Output(3,3,"Store maze in:
+Output(4,1,"--------------------------
+Output(5,3,"Slot 1
+Output(6,3,"Slot 2
+Output(7,3,"Slot 3
+Output(8,3,"Slot 4
+Output(9,3,"Slot 5
+Input "Slot",S
+If S=1
+Then
+[A]→[B]
+prgmTHVI
+If S=2
+Then
+[A]→[C]
+prgmTHVI
+If S=3
+Then
+[A]→[D]
+prgmTHVI
+If S=4
+Then
+[A]→[E]
+prgmTHVI
+If S=5
+Then
+[A]→[F]
+prgmTHVI
+If S≠1 or S≠2 or S≠3 or S≠4 or S≠5
+Goto Q

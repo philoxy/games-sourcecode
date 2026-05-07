@@ -1,0 +1,664 @@
+"VAR-ABCDEFGHIJKLM
+"RES-10x17
+"Q-shion
+"ADD MATRIX THEME!!
+2→A
+2→B
+1→C
+1→D
+0→M
+0→K
+"PRESS ENTER→Str1
+TextColor(BLACK
+BackgroundOff
+ClrDraw
+Listmatr({0,1,1,1,1,1,1,1,1},{1,0,3,0,0,0,3,2,1},{1,0,3,3,3,0,0,0,1},{1,0,0,0,3,0,3,0,1},{1,3,3,0,3,0,3,0,1},{1,0,3,0,0,0,3,0,1},{1,0,3,0,3,0,3,0,1},{1,2,0,0,0,0,3,0,1},{1,1,1,1,1,1,1,1,1},[A]
+If W=0
+ClrDraw
+Line(62,9,201,9,BLACK
+Line(200,9,200,151,BLACK
+Line(200,151,62,151,BLACK
+Line(62,151,62,9,BLACK
+Text(14,64,"_
+Wait 1
+Text(14,64,"theme_conf.8xp
+Wait 1
+Text(28,64,"_
+Wait 0.7
+Text(28,64,"LOADING..."
+70→M
+Wait 1
+Text(14,64,"                                                             "
+Text(140,64,"                                                                    "
+Text(140,64,"                                                                    "
+Text(14,64,"CHOOSE A THEME
+Text(28,64,"-----------------
+Text(42,64,"theme_Dark (1)
+Text(56,64,"theme_Light (2)
+Text(70,64,"theme_Navy (3)
+Text(84,64,"theme_XP (4)
+Text(98,64,"theme_Crazy (5)
+Text(112,64,"theme_CEy (6)
+Text(126,64,"theme_Mac (7)
+0→K
+Repeat K=92 or K=93 or K=94 or K=82 or K=83 or K=84 or K=72
+getKey→K
+End
+If K=92
+Then
+0→M
+TextColor(BLACK
+Repeat M=59
+Line(M,0,M,164,BLACK
+M+1→M
+End
+Repeat M=204
+Line(M,164,M,154,BLACK
+Line(M,5,M,0,BLACK
+M+1→M
+End
+Repeat M=265
+Line(M,0,M,164,BLACK
+M+1→M
+End
+End
+If K=93
+Then
+TextColor(WHITE
+End
+If K=94
+Then
+0→M
+TextColor(NAVY
+Repeat M=59
+Line(M,0,M,164,NAVY
+M+1→M
+End
+Repeat M=204
+Line(M,164,M,154,NAVY
+Line(M,5,M,0,NAVY
+M+1→M
+End
+Repeat M=265
+Line(M,0,M,164,NAVY
+M+1→M
+End
+End
+If K=82
+Then
+0→M
+TextColor(LTBLUE
+BackgroundOn 2
+End
+If K=83
+Then
+0→M
+TextColor(YELLOW
+Repeat M=59
+Line(M,0,M,164,MAGENTA
+M+1→M
+End
+Repeat M=204
+Line(M,164,M,154,BROWN
+Line(M,5,M,0,RED
+M+1→M
+End
+Repeat M=265
+Line(M,0,M,164,GREEN
+M+1→M
+End
+End
+If K=84
+Then
+TextColor(LTBLUE
+BackgroundOn 1
+End
+If K=72
+Then
+TextColor(NAVY
+BackgroundOn 3
+End
+0→M
+Lbl Y
+Text(14,64,"                                                                    "
+Text(28,64,"                                                                    "
+Text(42,64,"                                                                    "
+Text(56,64,"                                                                    "
+Text(70,64,"                                                                    "
+Text(84,64,"                                                                    "
+Text(98,64,"                                                                    "
+Text(112,64,"                                                                    "
+Text(126,64,"                                                                    "
+Text(140,64,"                                                                    "
+Text(14,64,"_
+Wait 1
+Text(14,64,"maze_test.8xp
+Wait 0.3
+Text(28,64,"_
+Wait 0.1
+Text(28,64,"LOADING..."
+70→M
+Wait 3
+Text(14,64,"                                                    "
+While K≠105
+Text(140,64,"
+Text(140,64,"                                                                    "
+Text(42,64,"        "
+Text(56,64,"        "
+Text(70,64,"        "
+Text(84,64,"        "
+Text(98,64,"        "
+Text(112,64,"       "
+If C=7
+1→C
+If C=0
+6→C
+If D=7
+1→D
+If D=0
+6→D
+Text(28+14D,64,"->
+Text(14,64,"        THVI
+Text(28,64,"-----------------
+Text(42,80,"play
+Text(56,80,"exit
+Text(70,80,"credits
+Text(84,80,"thvi_2_wip
+Text(98,80,"mazeedit
+Text(112,80,"fix_lag
+0→K
+0→M
+Repeat K=25 or K=34 or K=105
+getKey→K
+End
+If K≠105
+Then
+If K=25
+Then
+D→C
+D-1→D
+Else
+If K=34
+Then
+D→C
+D+1→D
+End
+End
+End
+If K=105
+Then
+If D=1
+Then
+"hello :]
+Else
+If D=2
+Then
+0→M
+Text(14,64,"                                                                    "
+Text(28,64,"                                                                    "
+Text(42,64,"                                                                    "
+Text(56,64,"                                                                    "
+Text(70,64,"                                                                    "
+Text(84,64,"                                                                    "
+Text(98,64,"                                                                    "
+Text(112,64,"                                                                    "
+Text(126,64,"                                                                    "
+Text(140,64,"                                                                   "
+Text(14,64,"game by philooxy
+Text(28,64,"clr to exit
+Wait 1
+ClrDraw
+BackgroundOff
+Stop
+Else
+If D=3
+Then
+"      THVI v4.2                                                                     GAME BY                   PHILOOXY                                         DEFAULT MAZE BY              HYDROGEN                                                                     thanks for                playing!!!                                                                    my channel:          youtube.com/(a)Philooxy                                                                                                                                                                                                           amongus                     →Str3
+1→B
+prgmSCROLL
+Else
+If D=4
+Then
+prgmTHVI2
+Else
+If D=5
+Then
+prgmMAZEDIT
+Else
+If D=6
+Then
+Text(14,64,"                                                                    "
+Text(28,64,"                                                                    "
+Text(42,64,"                                                                    "
+Text(56,64,"                                                                    "
+Text(70,64,"                                                                    "
+Text(84,64,"                                                                    "
+Text(98,64,"                                                                    "
+Text(112,64,"                                                                    "
+Text(126,64,"                                                                    "
+Text(140,64,"                                                                   "
+Text(14,64,"REOPEN THE GAME
+Text(28,64,"TO FIX THE LAG
+Text(70,64,"clr to exit
+Wait 1
+ClrDraw
+Stop
+End
+End
+End
+End
+End
+End
+End
+End
+0→D
+If M≠1
+Then
+Text(14,64,"                                                                    "
+Text(28,64,"                                                                    "
+Text(42,64,"                                                                    "
+Text(56,64,"                                                                    "
+Text(70,64,"                                                                    "
+Text(84,64,"                                                                    "
+Text(98,64,"                                                                    "
+Text(112,64,"                                                                    "
+Text(126,64,"                                                                    "
+Text(140,64,"                                                                   "
+0→M
+Repeat M=1
+Text(14,64,"CHOOSE A MAZE
+Text(28,64,"-----------------
+Text(42,64,"slot 1  (1)
+Text(56,64,"slot 2  (2)
+Text(70,64,"slot 3  (3)
+Text(84,64,"slot 4  (4)
+Text(98,64,"slot 5  (5)
+Text(112,64,"default (6)
+Repeat K≠0
+getKey→K
+End
+If K=92
+Then
+If [B](1,1)=0
+Then
+[B]→[A]
+1→M
+End
+If [B](1,1)=1
+Then
+Text(140,64,"                                                                   "
+Text(140,64,"EMPTY
+End
+End
+If K=93
+Then
+If [C](1,1)=0
+Then
+[C]→[A]
+1→M
+End
+If [C](1,1)=1
+Then
+Text(140,64,"                                                                   "
+Text(140,64,"EMPTY
+End
+End
+If K=94
+Then
+If [D](1,1)=0
+Then
+[D]→[A]
+1→M
+End
+If [D](1,1)=1
+Then
+Text(140,64,"                                                                   "
+Text(140,64,"EMPTY
+End
+End
+If K=82
+Then
+If [E](1,1)=0
+Then
+[E]→[A]
+1→M
+End
+If [E](1,1)=1
+Then
+Text(140,64,"                                                                   "
+Text(140,64,"EMPTY
+End
+End
+If K=83
+Then
+If [F](1,1)=0
+Then
+[F]→[A]
+1→M
+End
+If [F](1,1)=1
+Then
+Text(140,64,"                                                                   "
+Text(140,64,"EMPTY
+End
+End
+If K=84
+1→M
+End
+Text(14,64,"                                                                    "
+Text(28,64,"                                                                    "
+Text(42,64,"                                                                    "
+Text(56,64,"                                                                    "
+Text(70,64,"                                                                    "
+Text(84,64,"                                                                    "
+Text(98,64,"                                                                    "
+Text(112,64,"                                                                    "
+Text(126,64,"                                                                    "
+Text(140,64,"                                                                   "
+Text(14,64,"YOU ARE RIDING 
+Text(28,64,"YOUR BIKE OUTSIDE
+Text(42,64,"WHEN THE FLOOR
+Text(56,64,"BENEATH YOU
+Text(70,64,"COLLAPSES
+Text(98,64,Str1
+Pause 
+Text(14,64,"                                                                    "
+Text(28,64,"                                                                    "
+Text(42,64,"                                                                    "
+Text(56,64,"                                                                    "
+Text(70,64,"                                                                    "
+Text(84,64,"                                                                    "
+Text(98,64,"                                                                    "
+Text(112,64,"                                                                    "
+Text(126,64,"                                                                    "
+Text(140,64,"                                                                   "
+Text(14,64,"YOU BLACK OUT AND
+Text(28,64,"WAKE UP IN A
+Text(42,64,"SEWER
+Text(70,64,Str1
+Pause  
+Text(70,64,"                                        "
+Text(70,64,"TRY TO ESCAPE!
+Text(98,64,Str1
+Pause 
+Repeat [A](A,B)=2
+0→F
+0→G
+0→H
+0→I
+0→J
+0→K
+0→U
+0→V
+[A](A-1,B)→E
+If E=0 or E=2
+1→F
+[A](A+1,B)→E
+If E=0 or E=2
+1→G
+[A](A,B-1)→E
+If E=0 or E=2
+1→H
+[A](A,B+1)→E
+If E=0 or E=2
+1→I
+[A](A-1,B-1)→E
+If E=0 or E=2
+1→J
+[A](A-1,B+1)→E
+If E=0 or E=2
+1→K
+[A](A+1,B-1)→E
+If E=0 or E=2
+1→U
+[A](A+1,B+1)→E
+If E=0 or E=2
+1→V
+TextColor(BLACK
+Text(14,64,"                                                                    "
+Text(28,64,"                                                                    "
+Text(42,64,"                                                                    "
+Text(56,64,"                                                                    "
+Text(70,64,"                                                                    "
+Text(84,64,"                                                                    "
+Text(98,64,"                                                                    "
+Text(112,64,"                                                                    "
+Text(126,64,"                                                                    "
+Text(140,64,"                                                                    "
+If N=1
+Then
+J→O
+K→P
+F→Q
+G→R
+H→S
+I→T
+End
+If N=2
+Then
+K→O
+V→P
+I→Q
+H→R
+F→S
+G→T
+End
+If N=3
+Then
+V→O
+U→P
+G→Q
+F→R
+I→S
+H→T
+End
+If N=4
+Then
+U→O
+J→P
+H→Q
+I→R
+G→S
+F→T
+End
+If O=1
+Then
+Line(112,102,64,102,BLACK
+Line(112,62,64,62,BLACK
+Else
+If O=0
+Then
+Line(102,112,64,112,BROWN
+Line(102,52,64,52,BROWN
+Line(102,52,112,62,BROWN
+Line(102,112,112,102,BROWN
+Line(102,52,102,112,BROWN
+End
+End
+If P=1
+Then
+Line(152,102,202,102,BLACK
+Line(152,62,202,62,BLACK
+Else
+If P=0
+Then
+Line(162,52,200,52,BROWN
+Line(162,112,152,102,BROWN
+Line(162,112,200,112,BROWN
+Line(162,52,152,62,BROWN
+Line(162,112,162,52,BROWN
+End
+End
+If Q=1
+Then
+Line(152,62,112,62,BLACK
+Line(112,62,112,102,BLACK
+Line(112,102,152,102,BLACK
+Line(152,102,152,62,BLACK
+Else
+If Q=0
+Then
+Line(112,102,102,102,WHITE
+Line(112,62,102,62,WHITE
+Line(152,102,162,102,WHITE
+Line(152,62,162,62,WHITE
+Line(162,112,152,102,WHITE
+Line(162,52,152,62,WHITE
+Line(102,52,112,62,WHITE
+Line(102,112,112,102,WHITE
+Line(162,112,162,52,BROWN
+Line(162,52,102,52,BROWN
+Line(102,52,102,112,BROWN
+Line(102,112,162,112,BROWN
+End
+End
+If R=1
+Then
+Line(132,124,132,134,RED
+Line(132,134,122,129,RED
+Line(132,134,142,129,RED
+End
+If S=0
+Then
+Line(102,112,64,150,RED
+Line(102,52,64,14,RED
+Line(102,52,102,112,RED
+Line(100,112,64,112,WHITE
+Line(100,52,64,52,WHITE
+Line(64,102,101,102,WHITE
+Line(64,62,101,62,WHITE
+End
+If T=0
+Then
+Line(162,112,200,150,RED
+Line(162,52,200,14,RED
+Line(162,112,162,52,RED
+Line(164,102,201,102,WHITE
+Line(164,62,201,62,WHITE
+Line(164,112,201,112,WHITE
+Line(164,52,201,52,WHITE
+End
+Line(62,9,201,9,BLACK
+Line(200,9,200,151,BLACK
+Line(200,151,62,151,BLACK
+Line(62,151,62,9,BLACK
+0→K
+If [A](A,B)=2
+Text(14,64,"press any key
+Repeat K≠0
+getKey→K
+End
+If K=25
+Then
+If N=1
+Then
+[A](A-1,B)→E
+If E=0 or E=2
+A-1→A
+Else
+If N=2
+Then
+[A](A,B+1)→E
+If E=0 or E=2
+B+1→B
+Else
+If N=3
+Then
+[A](A+1,B)→E
+If E=0 or E=2
+A+1→A
+Else
+If N=4
+Then
+[A](A,B-1)→E
+If E=0 or E=2
+Then
+B-1→B
+End
+End
+End
+End
+End
+End
+If K=34
+Then
+If N=1
+Then
+[A](A+1,B)→E
+If E=0 or E=2 or E=3
+A+1→A
+Else
+If N=2
+Then
+[A](A,B-1)→E
+If E=0 or E=2 or E=3
+B-1→B
+Else
+If N=3
+Then
+[A](A-1,B)→E
+If E=0 or E=2 or E=3
+A-1→A
+Else
+If N=4
+Then
+[A](A,B+1)→E
+If E=0 or E=2 or E=3
+Then
+B+1→B
+End
+End
+End
+End
+End
+End
+If K=24
+Then
+N-1→N
+If N=0
+4→N
+End
+If K=26
+Then
+N+1→N
+If N=5
+1→N
+End
+If K=45
+Then
+ClrDraw
+Stop
+End
+End
+Text(14,64,"                                                                    "
+Text(28,64,"                                                                    "
+Text(42,64,"                                                                    "
+Text(56,64,"                                                                    "
+Text(70,64,"                                                                    "
+Text(84,64,"                                                                    "
+Text(98,64,"                                                                    "
+Text(112,64,"                                                                    "
+Text(126,64,"                                                                    "
+Text(140,64,"                                                                    "
+Text(14,64,"YOU ESCAPED!!
+Text(42,64,Str1
+Pause 
+Text(14,64,"                                                                    "
+Text(28,64,"                                                                    "
+Text(42,64,"                                                                    "
+Text(56,64,"                                                                    "
+Text(70,64,"                                                                    "
+Text(84,64,"                                                                    "
+Text(98,64,"                                                                    "
+Text(112,64,"                                                                    "
+Text(126,64,"                                                                    "
+Text(140,64,"                                                                    "
+Text(14,64,"BUT YOU FIND
+Text(28,64,"YOURSELF IN
+Text(42,64,"SAN FRANCISCO
+Text(70,64,Str1
+Pause 
+Text(70,64,"PART 2 COMING SOON
+Text(98,64,Str1
+Pause 
+prgmMAZETEST

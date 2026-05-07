@@ -1,0 +1,33 @@
+ClrHome
+UnArchive Str4
+Str3→Str4
+Archive Str4
+1→C
+Lbl 1
+getKey→K
+If K=25
+C-16→C
+If K=34
+C+16→C
+If K=45
+Then
+ClrHome
+Stop
+"
+End
+If K=105
+prgmTHVI
+If C≤0
+1→C
+
+If C+96>length(Str3
+C-16→C
+Output(2,1,sub(Str3,C,16
+Output(3,1,sub(Str3,C+16,16
+Output(4,1,sub(Str3,C+32,16
+Output(5,1,sub(Str3,C+48,16
+Output(6,1,sub(Str3,C+64,16
+Output(7,1,sub(Str3,C+80,16
+Output(8,1,"by philooxy
+Output(1,1,"str viewer v1.1
+Goto 1

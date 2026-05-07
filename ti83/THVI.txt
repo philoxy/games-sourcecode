@@ -1,0 +1,160 @@
+Lbl S
+9→X
+2→Y
+"PRESS ENTER→Str6
+ClrHome
+Menu("IDKWHATTHVIMEANS","START",1,"QUIT",2,"ABOUT",4,"PART 2",P
+Lbl P
+prgmTHVI2
+Lbl 2
+ClrHome
+Stop
+"
+Lbl 1
+Output(1,1,"YOU ARE RIDING YOUR BIKE OUTSIDE WHEN THE FLOOR BENEATH YOU COLLAPSES.
+Output(7,1,Str6
+Pause 
+ClrHome
+Output(1,1,"YOU BLACKOUT AND WAKE UP IN A SEWER.
+Output(5,1,Str6
+Pause 
+ClrHome
+Output(1,1,"TRY TO ESCAPE!
+Output(3,1,Str6
+
+Pause 
+Lbl G
+[A](X,Y)→W
+If W=2
+Then
+ClrHome
+Output(1,1,"YOU ESCAPED!!
+Output(4,1,Str6
+Pause 
+ClrHome
+Output(1,1,"BUT YOU FIND YOURSELF IN AFGHANISTAN.
+Output(5,1,Str6
+Pause 
+ClrHome
+Output(1,1,"2763 likes for part 2!!!1
+Output(4,1,Str6
+Pause 
+Goto S
+End
+[A](X-1,Y)→D
+If D=0 or D=2
+Then
+"FORWARD→Str7
+Goto 5
+Else
+"-------→Str7
+Goto 5
+Lbl 5
+[A](X+1,Y)→D
+If D=0 or D=2
+Then
+"BACKWARD→Str8
+Goto 6
+Else
+"--------→Str8
+Goto 6
+End
+Lbl 6
+[A](X,Y-1)→D
+If D=0 or D=2
+Then
+"LEFT→Str9
+Goto 7
+Else
+"----→Str9
+Goto 7
+End
+Lbl 7
+[A](X,Y+1)→D
+If D=0 or D=2
+Then
+"RIGHT→Str0
+Goto 8
+Else
+"-----→Str0
+Goto 8
+End
+Lbl 8
+ClrHome
+Menu("YOU CAN WALK:",Str7,A,Str8,B,Str9,C,Str0,E
+Lbl A
+ClrHome
+[A](X-1,Y)→D
+If D=0 or D=2
+Then
+X-1→X
+Output(1,1,"YOU MOVED FORWARD.
+Output(4,1,Str6
+Pause 
+Goto G
+Else
+If D=1
+Then
+Goto H
+Pause 
+Goto G
+End
+Lbl B
+ClrHome
+[A](X+1,Y)→D
+If D=0
+Then
+X+1→X
+Output(1,1,"YOU MOVED BACKWARD.
+Output(4,1,Str6
+Pause 
+Goto G
+Else
+If D=1
+Then
+Goto H
+End
+
+Lbl C
+ClrHome
+[A](X,Y-1)→D
+If D=0
+Then
+Y-1→Y
+Output(1,1,"YOU MOVED LEFT.
+Output(3,1,Str6
+Pause 
+Goto G
+Else
+If D=1
+Then
+Goto H
+End
+
+Lbl E
+ClrHome
+[A](X,Y+1)→D
+If D=0
+Then
+Y+1→Y
+Output(1,1,"YOU MOVED RIGHT.
+Output(3,1,Str6
+Pause 
+Goto G
+Else
+If D=1
+Then
+Goto H
+End
+
+Lbl H
+ClrHome
+Output(1,1,"YQU HIT A WALL.
+Output(3,1,Str6
+Pause 
+Goto G
+Lbl 4
+ClrHome
+" THVI v1.2                        GAME BY:        Philooxy        (anatoly)                      thanks for      playing!!!                      my channel:     youtube.com/    (a)Philooxy                                                                                     amongus                        →Str3
+prgmSCROLL
+"

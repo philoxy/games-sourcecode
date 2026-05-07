@@ -1,0 +1,64 @@
+"Quit→Str0
+getKey→K
+ClrHome
+If B=1
+Goto B
+Output(3,1,"Add a quote if  its not a       string.
+Output(7,1,"Type Str0 to    exit.
+Prompt Str3
+Lbl B
+If Str3=Str0
+Goto Q
+ClrHome
+Output(8,1,"Loading...
+UnArchive Str4
+Str3→Str4
+Archive Str4
+1→C
+0→B
+Str3+"                →Str3
+If (length(Str3)<128
+Then
+Repeat (length(Str3)=128
+Str3+" "→Str3
+End
+End
+Lbl F
+(length(Str3)/16→R
+If fPart(R)≠0
+Then
+Str3+" "→Str3
+Goto F
+End
+Lbl 1
+getKey→K
+If K=25
+C-16→C
+If K=34
+C+16→C
+If K=45
+Then
+Lbl Q
+ClrHome
+Output(1,4,"STR VIEWER
+Output(3,3,"By: Philooxy
+Output(8,1,"Loading...
+UnArchive Str4
+Str4→Str3
+Archive Str4
+Stop
+"
+End
+If C≤0
+1→C
+If C+96>length(Str3
+C-16→C
+Output(2,1,sub(Str3,C,16
+Output(3,1,sub(Str3,C+16,16
+Output(4,1,sub(Str3,C+32,16
+Output(5,1,sub(Str3,C+48,16
+Output(6,1,sub(Str3,C+64,16
+Output(7,1,sub(Str3,C+80,16
+Output(8,1,sub(Str3,C+96,16
+Output(1,1,"str viewer v1.5 
+Goto 1

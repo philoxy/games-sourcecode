@@ -1,0 +1,312 @@
+"
+ClrHome
+0→O
+0→N
+0→L
+0→M
+0→X
+0→I
+0→S
+1→W
+1→U
+90→E
+If U=0
+Then
+Repeat Y=0
+ClrHome
+Output(Y,6,"its just fnf T-T
+Y-1→Y
+Wait 0.1
+End
+If W=0
+Then
+1→Y
+Repeat Y>10
+Output(Y,1,"[
+Output(Y,26,"]
+Wait 0.1
+Y+1→Y
+End
+1→Y
+Repeat Y>10
+Output(Y,1," "
+Output(Y,26," "
+Wait 0.1
+Y+1→Y
+End
+End
+12→A
+3→B
+"       [ln to "→Str1
+"            start!]"→Str2
+"       [4 to e"→Str3
+"            xit :(]"→Str4
+"       [6 for "→Str5
+"            manual]"→Str6
+Repeat A<2
+Output(4,1,"                          "
+Output(5,1,"                          "
+Output(6,1,"                          "
+Output(7,1,"                          "
+Output(4,1,sub(Str1,A,B
+Output(4,14,sub(Str2,B,A+5
+Output(5,1,sub(Str3,A,B
+Output(5,14,sub(Str4,B,A+5
+Output(6,1,sub(Str5,A,B
+Output(6,14,sub(Str6,B,A+5
+Output(7,1,"                          "
+B+2→B
+A-2→A
+End
+End
+Output(1,6,"epic timing game
+Output(2,12,"[v3]
+Output(4,7,"[ln to start!]
+Output(5,7,"[4 to exit :(]
+Output(6,7,"[6 for manual]
+getKey→K
+Repeat K=81 or K=82 or K=84
+getKey→K
+End
+If K=84
+Then
+ClrHome
+Output(1,1,"Use ln, 4, 6, and - to hitthe arrows ^, <, >, and v respectively! The game    gets slowly faster, so getready! Look at the HUD formore info (combo, hp,     score, etc.)! Have fun!!!!                                                    -----press 6 to exit.-----
+getKey→K
+Repeat K=84
+getKey→K
+End
+prgmETG
+End
+If K=82
+Then
+ClrHome
+Stop
+Else
+If K=81
+Then
+0→S
+Repeat 0
+X+1→X
+ClrHome
+"||||→Str1
+"||||→Str2
+"||||→Str3
+"||||→Str4
+Output(1,1,"Generating level
+Output(1,18,X
+1→Z
+Repeat Z=27
+randInt(1,4)→A
+If A=1
+Then
+Str1+"^→Str1
+Str2+"|→Str2
+Str3+"|→Str3
+Str4+"|→Str4
+End
+If A=2
+Then
+Str1+"|→Str1
+Str2+"<→Str2
+Str3+"|→Str3
+Str4+"|→Str4
+End
+If A=3
+Then
+Str1+"|"→Str1
+Str2+"|"→Str2
+Str3+">"→Str3
+Str4+"|"→Str4
+End
+If A=4
+Then
+Str1+"|"→Str1
+Str2+"|"→Str2
+Str3+"|"→Str3
+Str4+"v"→Str4
+End
+Z+1→Z 
+End
+Str1+"||||||||||||||||||||||||||→Str1
+Str2+"||||||||||||||||||||||||||→Str2
+Str3+"||||||||||||||||||||||||||→Str3
+Str4+"||||||||||||||||||||||||||→Str4
+ClrHome
+1→Y
+Repeat Y=10
+Output(Y,11,"[    ]
+Y+1→Y
+End
+Output(10,9,"--[    ]--
+1→B
+1→F
+E-10→E
+5→H
+Repeat B>30
+0→O
+If F=0
+Then
+H-1→H
+0→I
+End
+If H<1
+Then
+ClrHome
+0→H
+"GAME OVER!→Str1
+If S>J
+Then
+S→J
+"NEW HI-SCORE!→Str1
+End
+Output(2,1,Str1
+Output(3,1,"LEVEL
+Output(3,7,X
+Output(4,1,"SCORE
+Output(4,7,S
+Output(5,1,"HI-SCORE
+Output(5,10,J
+Output(6,1,"ACCURACY
+Output(6,10,M
+Output(10,1,"Press ln to restart
+getKey→K
+Repeat K=81 or K=82
+getKey→K
+If K=81
+prgmETG
+If K=82
+Then
+ClrHome
+Stop
+"
+End
+H+1→H
+If H>50
+0→H
+If H<25
+Then
+Output(2,1,Str1
+Else
+Output(2,1,"             "
+End
+End
+End
+10→C
+0→G
+Repeat C<1 and G>9
+Output(C,12,sub(Str1,B+G,1
+Output(C,13,sub(Str2,B+G,1
+Output(C,14,sub(Str3,B+G,1
+Output(C,15,sub(Str4,B+G,1
+C-1→C
+G+1→G
+End
+0→D
+0→F
+If S<0
+0→S
+Output(2,2,"COMBO
+Output(3,2,"         "
+Output(3,2,I
+Output(5,2,"HP
+Output(6,2,H
+Output(8,2,"SCORE
+Output(9,2,S
+Output(2,18,"LEVEL
+Output(3,18,X
+Output(5,18,"ACCURACY
+Output(6,18,"   "
+Output(6,18,M
+Output(8,18,"BY
+Output(8,18,"PHILOOXY
+If I=0
+"nothing, do better
+If I<6 and I>0
+S+5→S
+If I>5 and I<11
+S+10→S
+If I>10 and I<21
+S+20→S
+If I>20 and I<31
+S+50→S
+If I>30 and I<51
+S+100→S
+If I>50 and I<101
+S+150→S
+If I>100 and I<201
+S+250→S
+If I>200 and I<1001
+S+500→S
+If I>1000
+S+27630→S
+If sub(Str1,B,1)="^"
+Then
+N+1→N
+Repeat D>E 
+getKey→K
+If K=81
+Then
+1→F
+I+1→I
+L+1→L
+End
+D+1→D
+End
+End
+If sub(Str2,B,1)="<"
+Then
+N+1→N
+Repeat D>E 
+getKey→K
+If K=82
+Then
+I+1→I
+L+1→L
+1→F
+End
+D+1→D
+End
+End
+If sub(Str3,B,1)=">"
+Then
+N+1→N
+Repeat D>E 
+getKey→K
+If K=84
+Then
+1→F
+I+1→I
+L+1→L
+End
+D+1→D
+End
+End
+If sub(Str4,B,1)="v"
+Then
+N+1→N
+Repeat D>E 
+getKey→K
+If K=85
+Then
+1→F
+I+1→I
+L+1→L
+End
+D+1→D
+End
+End
+If sub(Str1,B,1)="|" and sub(Str2,B,1)="|" and sub(Str3,B,1)="|" and sub(Str4,B,1)="|"
+Then
+1→O
+Repeat D>E
+D+1→D
+End
+1→F
+End
+B+1→B
+If N>0 and O=0
+(round(L/N,2)*100)→M
+End
+End
+End
